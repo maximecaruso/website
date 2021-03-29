@@ -57,16 +57,16 @@ footer > div > article{
 
 @media only screen and (max-width: 600px) {
     h1{
-        font-size:3vw;
+        font-size:4vw;
     }
     #text{
-        font-size:2vw;
-        line-height: 3vw;
-        width:80%;
+        font-size:2.4vw;
+        line-height: 3.8vw;
+        width:75%;
         height:110vw;
     }
     main{
-        min-height:120vw
+        min-height:160vw
     }
     main div{
         padding:0;
@@ -74,7 +74,7 @@ footer > div > article{
     main div:nth-child(2){
         width:80%;
         margin-left:10%;
-        margin-top:-40vw;
+        margin-top:-5vw;
     }
     main div img{
         width:47%;

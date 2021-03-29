@@ -201,24 +201,25 @@ footer> div> article{
         #dropdownH {
             visibility: hidden;
               opacity:0;
-              margin-left:-5%;
+              margin-left:-12%;
               margin-top:2vw;
-              width:40%;
+              width:80%;
               positioN:absolute;
               text-align: right;
               -webkit-transition: 0.3s ease;
-              top:28.2vw;
+              top:35.9vw;
           }
           .fadeH{
               visibility: visible !important;
               opacity:1 !important;
-              margin-left:2% !important;
+              margin-left:-2% !important;
           }
           #dropdownH li{
               display:inline-block;
-              margin-left:20%;
+              margin-left:5%;
              text-align: left;
-             width:10%;
+             width:auto;
+             float:right;
           }
           #dropdown2H {
               visibility: hidden;
@@ -227,20 +228,22 @@ footer> div> article{
                 margin-top:2vw;
                 width:40%;
                 positioN:absolute;
-                text-align: right;
+                text-align: left;
                 -webkit-transition: 0.3s ease;
-                top:35.2vw;
+                top:46.2vw;
+                margin-left:0%;
             }
             .fade2H{
                 visibility: visible !important;
                 opacity:1 !important;
-                margin-left:-10% !important;
+                margin-left:10% !important;
             }
             #dropdown2H li{
                 display:inline-block;
-              margin-left:15%;
+              margin-left:40%;
              text-align: left;
              width:10%;
+             float:right;
             
             }
         footer> div> article{
@@ -249,18 +252,19 @@ footer> div> article{
             width:80%;
             }
             footer{
-                height:60vw;
-                font-size: 2vw;
+                height:90vw;
+                font-size: 3vw;
+                line-height: 4.5vw;
             }
             body{
-                font-size: 2vw;
-                line-height: 3vw!important;
+                font-size: 4vw;
+                line-height: 6vw!important;
             }
             
                 header> div>ul>li {
                  
                     width:100%;
-                    margin-top:5vw;
+                    margin-top:8vw;
                     margin-right:0%!important;
                 } 
                 #dropdown li{
@@ -277,7 +281,7 @@ footer> div> article{
                     margin-top:5vw;
                 }
                 .footertop{
-                    height:7vw;
+                    height:11vw;
                 }
 
             

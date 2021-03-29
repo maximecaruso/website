@@ -133,20 +133,20 @@ $(document).ready(function(){
       
       });
          
-    function burger(){
-      
-      if(burgerB == false){
-        $('#burger').css({"display":"none"});
-        $('#close').css({"display":"block"});
-        $('#nav').animate({"height":"40vw"});
-        burgerB=true;
-        return;
+      function burger(){
+  
+        if(burgerB == false){
+          $('#burger').css({"display":"none"});
+          $('#close').css({"display":"block"});
+          $('#nav').animate({"height":"60vw"});
+          burgerB=true;
+          return;
+        }
+        if(burgerB == true){
+          $('#close').css({"display":"none"});
+          $('#burger').css({"display":"block"});
+          $('#nav').animate({"height":"0vw"});
+          burgerB=false;
+          return;
+        }
       }
-      if(burgerB == true){
-        $('#close').css({"display":"none"});
-        $('#burger').css({"display":"block"});
-        $('#nav').animate({"height":"0vw"});
-        burgerB=false;
-        return;
-      }
-    }

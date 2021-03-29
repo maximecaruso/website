@@ -151,7 +151,7 @@ function burger(){
   if(burgerB == false){
     $('#burger').css({"display":"none"});
     $('#close').css({"display":"block"});
-    $('#nav').animate({"height":"40vw"});
+    $('#nav').animate({"height":"60vw"});
     burgerB=true;
     return;
   }
