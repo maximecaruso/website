@@ -50,3 +50,35 @@ main div{
    margin-left:5%;
     float: left;
 }
+
+@media only screen and (max-width: 600px) {
+    #z p{
+        width: 100% !important;
+        margin-left:0!important;
+        
+    }
+    #sb{
+        margin-top:10vw;
+    }
+    #profil{
+        padding:0;
+        width:100%;
+        margin-left:0;
+        margin-top:25vw;
+        height:125vw;
+    }
+    #profil img{
+        width:80%;
+        margin-left:10%; 
+        margin-top:4vw;
+    }
+    #profil p{
+        line-height: 1vw;
+        width:80%;
+        margin-left:10%;
+    }
+    main div:nth-child(4){
+        width: 100% !important;
+        margin-left:0 !important;
+    }
+}

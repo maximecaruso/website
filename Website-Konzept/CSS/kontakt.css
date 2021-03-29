@@ -43,3 +43,18 @@ a img {
     display: inline-block;
     margin-bottom:10vw;
 }
+
+@media only screen and (max-width: 600px) {
+    	#sb{
+            margin-top:10vw;
+        }
+   #textKa{
+       margin-top:0;
+       width:100%!important;
+   } 
+    #karte{
+        margin-top:10vw;
+        width:100%;
+       
+    }
+}
