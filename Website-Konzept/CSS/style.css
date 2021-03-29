@@ -208,7 +208,7 @@ footer> div> article{
             left:0% !important;
         }
         main{
-            min-height:70vw;
+            min-height:100vh;
         }
         #dropdownH {
             visibility: hidden;
