@@ -14,7 +14,7 @@ main div:first-of-type{
   
    background-image: url("../Images/1x/Element\ 5.png");
    background-repeat: no-repeat;
-   background-size: 100%;
+   background-size: 99%;
    padding: 3%;
    padding-top: 0.7vw;
 }
