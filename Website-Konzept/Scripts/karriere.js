@@ -33,7 +33,7 @@ let an = false;
 if(window.innerWidth>600){
             if((window.pageYOffset+(window.innerHeight/1.6))>$("#bilden").offset().top && an == false ){
                
-                $("#bilden>img").attr("src","../Images/werbungjb3.gif?"+d.getTime())
+                $("#bilden>img").attr("src","https://prinzessin223.github.io/website/Website-Konzept/Images/werbungJb3.gif")
                 $("#bilden>p").animate({"opacity":"1"},1000);
                 an =true;
           }
@@ -48,7 +48,7 @@ if(window.innerWidth>600){
 else{
   if((window.pageYOffset+(window.innerHeight/1.6))>$("#bildenHa").offset().top && an == false ){
                
-    $("#bildenHa>img").attr("src","../Images/werbungjb3.gif?"+d.getTime())
+    $("#bildenHa>img").attr("src","https://prinzessin223.github.io/website/Website-Konzept/Images/werbungJb3_2.gif")
     $("#bildenHa>p").animate({"opacity":"1"},1000);
     an =true;
 }
