@@ -33,6 +33,9 @@
     opacity:0;
     margin-top:9vw;
 }
+#bildenHa{
+    display:none;
+}
 h1, h2 {
 
     font-weight:200;
@@ -67,4 +70,36 @@ h1{
 #zitat img{
     width:50%;
     margin-left:25%;
+}
+
+@media only screen and (max-width: 600px) {
+    #bilden{
+        display:none;
+    }
+    #suche img{
+        width:100%;
+    }
+    #suche{
+        margin-left:10%;
+    }
+    #suche p{
+        width:100%;
+        margin-top:-8vw;
+    }
+    #bildenHa img{
+        width:100%;
+    }
+    #bildenHa{
+        margin-left:10%;
+        width:80%;
+        display:blocK;
+    }
+    #bildenHa p{
+        width:100%;
+        margin-top:-3vw;
+    }
+    #zitat{
+        margin-left:10%;
+        width:80%;
+    }
 }
