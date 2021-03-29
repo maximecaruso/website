@@ -5,7 +5,7 @@ $(document).ready(function(){
 
     $("main").animate({opacity:1});
     $("#suche>p").animate({"opacity":"1"},1000);
-    $("#suche>img").attr("src","../Images/werbungjb3_2.gif")
+    $("#suche>img").attr("src","https://prinzessin223.github.io/website/Website-Konzept/Images/werbungJb3_2.gif")
   });
 
 
@@ -48,7 +48,7 @@ if(window.innerWidth>600){
 else{
   if((window.pageYOffset+(window.innerHeight/1.6))>$("#bildenHa").offset().top && an == false ){
                
-    $("#bildenHa>img").attr("src","https://prinzessin223.github.io/website/Website-Konzept/Images/werbungJb3_2.gif")
+    $("#bildenHa>img").attr("src","https://prinzessin223.github.io/website/Website-Konzept/Images/werbungJb3.gif")
     $("#bildenHa>p").animate({"opacity":"1"},1000);
     an =true;
 }
