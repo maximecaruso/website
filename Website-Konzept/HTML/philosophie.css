@@ -1,0 +1,14 @@
+#text{
+    width:100%;
+}
+main div{
+    width: 40% ;
+    margin-left:10%;
+    color:red;
+}
+@media only screen and (max-width: 600px) {
+    #text{
+        font-size:2vw;
+        line-height:3vw;
+    }
+}

@@ -1,0 +1,52 @@
+h1, h2 {
+
+    font-weight:200;
+}
+h1{
+    margin-bottom:3vw;
+    color:#333;
+    margin-top:5vw;
+    font-size: 2vw;
+    margin-left:10%;
+}
+#sb{
+    width:80%;
+    margin-left:10%;
+}
+img {
+    width:100%;
+}
+a img {
+    width:30%;
+}
+main div{
+    width:80%;
+    margin-left:10%;
+}
+#z{
+    margin-top:7vw;
+    background-image: url("../Images/1x/Element\ 21.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height:8vw;
+}
+#profil{
+    width:60%;
+    margin-top: 5vw;
+    margin-left: 10%;;
+    height:30vw;
+    padding:2%;
+    background-color: #ddd;
+    padding-right: 0;
+}
+#profil img{
+    width:50%;
+    float: left;
+   
+}
+#profil p{
+    width:40%;
+
+   margin-left:5%;
+    float: left;
+}

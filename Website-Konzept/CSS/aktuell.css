@@ -1,0 +1,107 @@
+h1{
+    margin-top:5vw;
+    margin-bottom: -4vw;
+    color:#333;
+    font-size: 2vw;
+    margin-left:10%;
+}
+h1, h2 {
+
+    font-weight:200;
+}
+#gallerie{
+    background-color: #eee;
+    min-height:85vw;
+}
+
+#gallerie img{
+    width: 100%;
+}
+#gal{
+    padding:10%;
+
+}
+
+#lpfeil{
+    display:inline-block;
+    width: 3% !important;
+    float:left;
+    margin-left:4%;
+    margin-top:7vw;
+}
+#rpfeil{
+    display:inline-block;
+    width: 3% !important;
+    float:right;
+    margin-right: 4%;
+    margin-top:7vw;
+}
+#dotHolder{
+    text-align: center;
+    z-index: 15;
+    position:absolute;
+    left:50%;
+}
+.dot {
+    cursor: pointer;
+    height: 0.5vw;
+    width: 0.5vw;
+    margin: 0 0.3vw;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    margin-top:36.5vw;
+ 
+  }
+  .active, .dot:hover {
+    background-color: #666;
+  
+  }
+
+
+  @media only screen and (max-width: 600px) {
+    h1{
+        font-size: 3vw;
+    }
+    p{
+        font-size: 2.5vw;
+        line-height: 3.5vw;
+        margin-top:10vw;
+    }
+    #dotHolder{
+        text-align: center;
+        z-index: 15;
+        position:absolute;
+        left:38%;
+    }
+    .dot {
+        cursor: pointer;
+        height: 1.4vw;
+        width: 1.4vw;
+        margin: 0 1vw;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+        margin-top:36.5vw;
+        text-align: center;
+     
+      }
+      #rpfeil{
+          width: 8% !important;
+          margin-right:3%;
+          opacity:0.7;
+          
+      }
+      #lpfeil{
+        width: 8% !important;
+        margin-left:3%;
+        opacity:0.7;
+    }
+      footer p{
+          margin-top:2vw;
+          font-size:2vw;
+          line-height: 3vw;
+      }
+}
