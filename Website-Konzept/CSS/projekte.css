@@ -66,11 +66,15 @@
       #projekte> div{
           width:100%;
  }
+ #projekte{
+     margin-top:5vw;
+     
+ }
  .title{
      margin-top:1vw;
      font-size: 4vw;
  }
  .arrow{
-    margin-top:-70vw;
+    display: none;
 }
 }

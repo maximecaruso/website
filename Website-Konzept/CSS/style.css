@@ -194,10 +194,22 @@ footer> div> article{
             height:0vw;
         }
         #close{
-            
+            opacity:0.9;
             fill:#FC6828;
         }
-        
+        .navI{
+            margin-toP:7vw;
+            width:10%;
+            opacity:0.4;
+        }
+        #imageStart div{
+            margin-top:5vw;
+            width: 100% !important;
+            left:0% !important;
+        }
+        main{
+            min-height:70vw;
+        }
         #dropdownH {
             visibility: hidden;
               opacity:0;
@@ -207,7 +219,7 @@ footer> div> article{
               positioN:absolute;
               text-align: right;
               -webkit-transition: 0.3s ease;
-              top:35.9vw;
+              margin-top:20vw;
           }
           .fadeH{
               visibility: visible !important;
@@ -230,7 +242,7 @@ footer> div> article{
                 positioN:absolute;
                 text-align: left;
                 -webkit-transition: 0.3s ease;
-                top:46.2vw;
+                margin-top:30vw;
                 margin-left:0%;
             }
             .fade2H{
@@ -252,7 +264,7 @@ footer> div> article{
             width:80%;
             }
             footer{
-                height:90vw;
+                height:120vw;
                 font-size: 3vw;
                 line-height: 4.5vw;
             }
@@ -275,13 +287,21 @@ footer> div> article{
                     display:inline-block;
                 }
                 header>div img{
-                    width:30%;
+                    width:45%;
                     margin-left:0%;
                     display:inline-block;
                     margin-top:5vw;
                 }
                 .footertop{
                     height:11vw;
+                }
+                footer p{
+                    margin-top:5vw;
+                    font-size:3vw;
+                    line-height: 4.5vw;
+                }
+                footer article{
+                    margin-top:5vw;
                 }
 
             
