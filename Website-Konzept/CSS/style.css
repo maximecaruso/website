@@ -2,6 +2,7 @@
 html{
     background-color: #555;
     
+    overflow-x: hidden;
 }
 body{
     position:absolute;
