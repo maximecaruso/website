@@ -107,3 +107,49 @@ h1, h2 {
 main{
     height:160vw;
 }
+
+@media only screen and (max-width: 600px) {
+    main{
+        height:300vw;
+
+    }
+    h1{
+        font-size: 4vw;
+        margin-left:5%;
+    }
+    #text1, #text2, #text3, #text4{
+        width:100%;
+        margin-left:0%;
+    }
+    #text1{
+        margin-top:5vw;
+    }
+    #text1 p{
+       
+        margin-top:0vw !important;
+    }
+    p{
+        font-size:3vw;
+        line-height:4.5vw;
+        width:90% !important;
+        margin-top:5vw !important;
+        margin-left:5% !important;
+    }
+    main img{
+        width:38% !important;
+        margin-top:2vw !important;
+
+    }
+    #text2{
+        height:100vw;
+    }
+    #text2 img{
+        margin-top:0vw;
+    }
+    #text4{
+        height:90vw;
+    }
+    #text4 img{
+
+    }
+}
