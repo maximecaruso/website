@@ -33,7 +33,8 @@ function lp (n){
     console.log(n);
     slider(l);
 }
-
+jQuery( window ).on( "swipeleft", function( event ) { slider(-1)} )
+jQuery( window ).on( "swiperight", function( event ) { slider(1)} )
  function slider(s){
     for (let i = 0; i<bilderMax; i++){
         $("#dotHolder span:nth-child("+(i+1)+")").css("background-color","#bbb");
