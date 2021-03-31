@@ -2,7 +2,7 @@ var l = 1;
 var newBilder = -1;
 var bilderMax = 37;
 var burgerB = false;
-var title = ["AstridlindgrenSchule","Projekt 2","Projekt 3","Projekt 4","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2"]
+var title = ["AstridlindgrenSchule","Zulassungsstelle","Projekt 3","Projekt 4","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2"]
 
 $(document).ready(function(){
     for (let i = 0; i<bilderMax; i++){
