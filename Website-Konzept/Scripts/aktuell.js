@@ -19,8 +19,8 @@ $(document).ready(function(){
     $("#startbild0").css("display","block");
     //slider(5);
     $("main").animate({opacity:1});
-    $("#gallerie img" ).bind( "swipeleft", function( event ) { lp(-1);} );
-  $("#gallerie img" ).bind( "swiperight", function( event ) { lp(1);} );
+    $("#gallerie" ).bind( "swipeleft", function( event ) { lp(-1);} );
+  $("#gallerie" ).bind( "swiperight", function( event ) { lp(1);} );
   });
 
 function lp (n){
