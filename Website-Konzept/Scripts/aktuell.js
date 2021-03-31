@@ -21,7 +21,7 @@ $(document).ready(function(){
     $("main").animate({opacity:1});
     $("#gallerie" ).on( "swipeleft", function( event ) { lp(1);} );
   $("#gallerie" ).on( "swiperight", function( event ) { lp(-1);} );
-  $("#gallerie" ).on( "click", function( event ) { lp(1);} );
+  $("#gallerie img" ).on( "click", function( event ) { lp(1);} );
   });
 
 function lp (n){
