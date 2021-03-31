@@ -1,7 +1,7 @@
 var l = 0;
 var burgerB = false;
 var bilderMax = 7;
-let namen = ["Wohnhaus Schnitzhofer","Wohnhaus Schnizhofer","Ausstellungsgebäude Hogenmüller","Ausstellungsgebäude Hogenmüller","Ausstellungsgebäude Hogenmüller","Erweiterung Haus am Harmersbach","Mehrfamiliewohnhaus Hofweier"];
+let namen = ["Ausstellungsgebäude Hogenmüller","Ausstellungsgebäude Hogenmüller","Ausstellungsgebäude Hogenmüller","Mehrfamiliewohnhaus Hofweier","Erweiterung Haus am Harmersbach","Wohnhaus Schnitzhofer","Wohnhaus Schnizhofer"];
 let text = [
   "BLALALALALSDASDKkaosdkkk koakdaosodokao kdoaksdokajdj jaksdk koakodk kaksodkoa",
   "BLALALALALSDASDKkaosdkkk koakdaosodokao kdoaksdokajdj jaksdk koakodk kaksodkoa",
