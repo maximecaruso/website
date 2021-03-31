@@ -6,13 +6,16 @@
     display:inline-block;
     margin-left:5%;
     width:28.3%;
-    height:30vw;
+    
 
     overflow: hidden;
 
     filter: grayscale(0);
   
     
+}
+#projekte> div img{
+    height:35vw;
 }
 
 #projekte> div:hover{
@@ -65,7 +68,12 @@
       }
       #projekte> div{
           width:100%;
+         
  }
+ #projekte> div img{
+    height:118vw;
+}
+
  #projekte{
      margin-top:5vw;
      

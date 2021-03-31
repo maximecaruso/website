@@ -7,7 +7,7 @@ var title = ["AstridlindgrenSchule","Zulassungsstelle","Projekt 3","Projekt 4","
 $(document).ready(function(){
     for (let i = 0; i<bilderMax; i++){
         $("#projekte").append("<div id='projekt"+i+"' style='margin-top:20vw'></div>");
-      $("#projekt"+i).append("<a href='../projekte/"+title[i]+"/"+title[i]+".html'><div class='projektHolder'><img src='../Images/ProjektImage/"+title[i]+".jpg' class='projekte' style=''><p class='title'>"+title[i]+"</p><img src='../Images/keyboard_arrow_right_white_24dp.svg' class='arrow'></div></a>");
+      $("#projekt"+i).append("<a href='../Projekte/"+title[i]+"/"+title[i]+".html'><div class='projektHolder'><img src='../Images/ProjektImage/"+title[i]+".jpg' class='projekte' style=''><p class='title'>"+title[i]+"</p><img src='../Images/keyboard_arrow_right_white_24dp.svg' class='arrow'></div></a>");
     }
 
     $("main").animate({opacity:1});
