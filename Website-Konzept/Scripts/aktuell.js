@@ -19,6 +19,8 @@ $(document).ready(function(){
     $("#startbild0").css("display","block");
     //slider(5);
     $("main").animate({opacity:1});
+    $("#gallerie img" ).bind( "swipeleft", function( event ) { lp(-1);} );
+  $("#gallerie img" ).bind( "swiperight", function( event ) { lp(1);} );
   });
 
 function lp (n){
@@ -33,8 +35,7 @@ function lp (n){
     console.log(n);
     slider(l);
 }
-jQuery( window ).on( "swipeleft", function( event ) { slider(-1)} )
-jQuery( window ).on( "swiperight", function( event ) { slider(1)} )
+
  function slider(s){
     for (let i = 0; i<bilderMax; i++){
         $("#dotHolder span:nth-child("+(i+1)+")").css("background-color","#bbb");
