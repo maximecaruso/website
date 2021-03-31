@@ -12,15 +12,15 @@ let text = [
 $(document).ready(function(){
     for (let i = 0; i<bilderMax; i++){
       $("#gal").append("<div id='startbild"+i+"' style='position:absolute;display:none;width:80%;'><img src='../Images/aktuell/aktuell"+(i+1)+".png' ><p>"+namen[i]+"</p><p style='margin-top:5vw;'>"+text[i]+"</p></div>");
-      $("#dotHolder").append("<span class='dot' onclick='slider("+i+")'></span>");
+      $("#dotHolder").append("<span class='dot' onclick='l="+i+";slider("+i+");'></span>");
    
     }
     $("#startbild0").fadeIn(500);
     $("#startbild0").css("display","block");
     //slider(5);
     $("main").animate({opacity:1});
-    $("#gallerie" ).bind( "swipeleft", function( event ) { lp(1);} );
-  $("#gallerie" ).bind( "swiperight", function( event ) { lp(-1);} );
+    $("#gallerie" ).on( "swipeleft", function( event ) { lp(1);} );
+  $("#gallerie" ).on( "swiperight", function( event ) { lp(-1);} );
   $("#gallerie" ).on( "click", function( event ) { lp(1);} );
   });
 
