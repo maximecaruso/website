@@ -20,8 +20,8 @@ $(document).ready(function(){
     //slider(5);
     $("main").animate({opacity:1});
     $("#gallerie" ).on( "swipeleft", function( event ) { lp(1);} );
-  $("#gallerie" ).on( "swiperight", function( event ) { lp(-1);} );
-  $("#gallerie img" ).on( "click", function( event ) { lp(1);} );
+  $("#gallerie" ).on( "swiperight", function( event ) { lp1(-1);} );
+  $("#gallerie img:first-child" ).on( "click", function( event ) { lp(1);} );
   });
 
 function lp (n){
@@ -32,33 +32,76 @@ function lp (n){
     if(l==bilderMax){
         l=0;
     }
-    console.log(l);
-    console.log(n);
+   
     slider(l);
+    console.log("s");
+}
+function lp1 (n){
+  l += n;
+  if(l<0){
+      l=bilderMax-1;
+  }
+  if(l==bilderMax){
+      l=0;
+  }
+ 
+  slider1(l);
+  console.log("s");
 }
 
+
  function slider(s){
+   
+  $("#startbild"+s+" img").css({"margin-left":"100%"});
     for (let i = 0; i<bilderMax; i++){
         $("#dotHolder span:nth-child("+(i+1)+")").css("background-color","#bbb");
         $("#startbild"+i+"").css("z-index","0");
         }
-    $("#startbild"+s+"").css("z-index","1").fadeIn(600);
-   
+        $("#startbild"+s).css("z-index","1").fadeIn();
+        if(window.innerWidth<600){
+    $("#startbild"+s+" img").animate({"margin-left":"-13%"});
+        }
+        else{
+          $("#startbild"+s+" img").animate({"margin-left":"-0%"});
+        }
     $("#dotHolder span:nth-child("+(s+1)+")").css("background-color","#666");
     for (let i = 0; i<bilderMax; i++){
         
         if(s != i){
-    
-        $("#startbild"+i+"").delay(400).fadeOut(100);
+        
+            $("#startbild"+i+" img").animate({"margin-left":"-100%"});
+            $("#startbild"+i).delay(400).fadeOut(100);
+
         }
-        
-            
-        
         }
-        
-        
-     
+
       }
+      function slider1(s){
+   
+        $("#startbild"+s+" img").css({"margin-left":"-100%"});
+          for (let i = 0; i<bilderMax; i++){
+              $("#dotHolder span:nth-child("+(i+1)+")").css("background-color","#bbb");
+              $("#startbild"+i+"").css("z-index","0");
+              }
+              $("#startbild"+s).css("z-index","1").fadeIn();
+              if(window.innerWidth<600){
+          $("#startbild"+s+" img").animate({"margin-left":"-13%"});
+              }
+              else{
+                $("#startbild"+s+" img").animate({"margin-left":"0%"});
+              }
+          $("#dotHolder span:nth-child("+(s+1)+")").css("background-color","#666");
+          for (let i = 0; i<bilderMax; i++){
+              
+              if(s != i){
+              
+                  $("#startbild"+i+" img").animate({"margin-left":"100%"});
+                  $("#startbild"+i).delay(400).fadeOut(100);
+      
+              }
+              }
+      
+            }
 
       $(document).ready(function(){
         $(function(){
