@@ -16,8 +16,10 @@ $(document).ready(function(){
 });
     for (let i = 0; i<bilderMax; i++){
       $("#gal").append("<div id='startbild"+i+"' style='position:absolute;display:none;width:80%;'><img src='../Images/aktuell/aktuell"+(i+1)+".png' ><p>"+namen[i]+"</p><p style='margin-top:5vw;'>"+text[i]+"</p></div>");
-      $("#dotHolder").append("<span class='dot' onclick='l="+i+";slider("+i+");'></span>");
-   
+      $("#dotHolder").append("<span class='dot' onclick='fade1("+i+");'></span>");
+    }
+    for (let i = 0; i<2; i++){
+      $("#dotHolder2").append("<span class='dot' onclick='fade2("+i+");'></span>");
     }
     $("#startbild0").fadeIn(500);
     $("#startbild0").css("display","block");
@@ -27,17 +29,41 @@ $(document).ready(function(){
   $("#gallerie" ).on( "swiperight", function( event ) { lp1(-1);} );
   $("#gallerie img:first-child" ).on( "click", function( event ) { lp(1);} );*/
   });
-
+function fade1(n){
+  $("#img"+(n)).animate({"opacity":"1"});
+  $("#img"+(n+1)).animate({"opacity":"0"});
+  $("#img"+(n+2)).animate({"opacity":"0"});
+}
+function fade2(n){
+  $("#imgA"+(n)).animate({"opacity":"1"});
+  $("#imgA"+(n+1)).animate({"opacity":"0"});
+}
   $(function() {
+
     $("#prj1").swipe( {
-    
+     
       swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
+        if(window.innerWidth<600){
       if(direction== "right"){
         lp1(-1);
       }
       if(direction== "left"){
         lp(1);
       }
+    }
+      }
+    });
+    $("#prj2").swipe( {
+     
+      swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
+        if(window.innerWidth<600){
+      if(direction== "right"){
+        lpA1(-1);
+      }
+      if(direction== "left"){
+        lpA(1);
+      }
+    }
       }
     });
   
@@ -48,20 +74,27 @@ $(document).ready(function(){
 function lp (n){
   if(l<2){
     l += n;
- 
-   
-    slider(l);
-    
+    slider(l); 
   }
 }
 function lp1 (n){
   if(l>0){
   l += n;
-
- 
   slider1(l);
   }
 }
+  function lpA (n){
+    if(l<1){
+      l += n;
+      sliderA(l); 
+    }
+  }
+  function lpA1 (n){
+    if(l>0){
+    l += n;
+    sliderA1(l);
+    }
+  }
 
 
  function slider(s){
@@ -77,6 +110,20 @@ function lp1 (n){
         $("#img"+s).animate({"left":"0%"}); 
         $("#img"+(s-1)).animate({"left":"-90%"});
             }
+
+            function sliderA(s){
+  
+              $("#imgA"+(s-1)).animate({"left":"-90%"});
+              $("#imgA"+s).animate({"left":"0%"});
+              
+              
+                  }
+                  function sliderA1(s){   
+               
+                    $("#imgA"+(s+1)).animate({"left":"90%"});
+                    $("#imgA"+s).animate({"left":"0%"}); 
+                    
+                        }
 
       
             $(document).ready(function(){

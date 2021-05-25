@@ -40,12 +40,20 @@ h1, h2 {
     text-align: center;
     z-index: 15;
     position:absolute;
-    left:50%;
+    left:65%;
+    top:-2vw;
+}
+#dotHolder2{
+    text-align: center;
+    z-index: 15;
+    position:absolute;
+    left:35%;
+    top:120vw;
 }
 .dot {
     cursor: pointer;
-    height: 0.5vw;
-    width: 0.5vw;
+    height: 0.6vw;
+    width: 0.6vw;
     margin: 0 0.3vw;
     background-color: #bbb;
     border-radius: 50%;
@@ -117,18 +125,24 @@ margin-top:5vw;
 }
 #img0 , #img1, #img2 {
     position: absolute;
-   width:90%;
+   width:50%;
+   opacity:0;
 }
 #img0{
-    
-    left:0vw;
+    opacity:1;
 }
-#img1 {
-    left:90%;
+#imgA0{
+    position:absolute;
+    opacity:1;
+    width:50%;
 }
-#img2 {
-    left:180%;
+#imgA1{
+    position:absolute;
+    opacity:0;
+    width:50%;
 }
+
+
 
   @media only screen and (max-width: 600px) {
     h1{
@@ -145,12 +159,8 @@ margin-top:5vw;
         margin-top:10vw;
     }
   
-    #dotHolder{
-        text-align: center;
-        z-index: 15;
-        position:absolute;
-        left:32%;
-        margin-top:50.5vw;
+    #dotHolder, #dotHolder2{
+        display:none;
     }
     #gal{
         padding-top:0;
@@ -221,4 +231,34 @@ margin-top:5vw;
     .projekt2 .pfeil{
         width:6%;
     }
+    #img0 , #img1, #img2 {
+        position: absolute;
+       width:90%;
+       opacity:1;
+    }
+    #img0{
+        
+        left:0vw;
+    }
+    #img1 {
+        left:90%;
+    }
+    #img2 {
+        left:180%;
+    }
+
+
+    #imgA0 , #imgA1 {
+        position: absolute;
+       width:90%;
+       opacity:1;
+    }
+    #imgA0{
+        
+        left:0vw;
+    }
+    #imgA1 {
+        left:90%;
+    }
+   
 }
