@@ -58,12 +58,82 @@ h1, h2 {
     background-color: #666;
   
   }
+  .projekt{
+      width:100%;
+      height:30vw;
+      padding:5%;
+      background-color: #ddd;
+      
+  }
+  .projekt .bildholder{
+    overflow:hidden;
+    height:25vw;
+    width:50%;
+    float:right;
+    margin-right:15%;
+}
+.projekt p{
+    margin-left:5%;
+margin-top:5vw;
+    width:40%;
+}
+.projekt h1{
+    margin-left:5%;
+    font-size: 1.5vw;
+    font-weight: 300;
+}
 
+.projekt2{
+    padding:5%;
+    width:100%;
+    height:30vw;
+    
+}
+.projekt2 .bildholder{
+    overflow:hidden;
+    height:30vw;
+  width:50%;
+  margin-left:5%;
+  float:left;
+}
+.projekt img, .projekt2 img{
+width:100%
+}
+.projekt2 p{
+   float:right;
+  margin-right:10%;
+margin-top:5vw;
+  width:30%;
+ 
+  
+}
+.projekt2 h1{
+
+    float:left;
+    
+  margin-left:5%;
+  font-size: 1.5vw;
+  font-weight: 300;
+}
+#img0 , #img1, #img2 {
+    position: absolute;
+   width:90%;
+}
+#img0{
+    
+    left:0vw;
+}
+#img1 {
+    left:90%;
+}
+#img2 {
+    left:180%;
+}
 
   @media only screen and (max-width: 600px) {
     h1{
-        font-size: 4vw;
-        margin-top:10vw;
+        font-size: 4vw !important;
+      
     }
     p{
         font-size: 3vw;
@@ -109,5 +179,46 @@ h1, h2 {
       #lpfeil{
         display:none;
     }
-    
+    .projekt .bildholder{
+        width:100%;
+        height:60vw;
+        margin-left:-5%;
+        float:left;
+    }
+    .projekt2 .bildholder{
+        width:100%;
+        height:60vw;
+        margin-left:-5%;
+    }
+    .projekt, .projekt2{
+        height:80vw;
+    }
+    .projekt h1{
+        width:100%;
+        float: left;
+        margin-top: 3vw;
+        margin-left:-2%;
+    }
+    .projekt2 h1{
+        width:100%;
+        float: left;
+        margin-top: 2vw;
+        margin-left:-2%;
+    }
+    .projekt p{
+        width:100%;
+        float: left;
+        margin-left:-2%;
+    }
+    .projekt2 p{
+        width:100%;
+        margin-left:-2%;
+        float:left;
+    }
+    .projekt .pfeil{
+        width:6%;
+    }
+    .projekt2 .pfeil{
+        width:6%;
+    }
 }

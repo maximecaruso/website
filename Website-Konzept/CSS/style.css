@@ -23,7 +23,7 @@ a{
 a img{
    width:30%;
 }
-#active{}
+
 strong{
     font-weight:600;
 }
@@ -32,7 +32,6 @@ strong{
     width:0%;
     background-color: #FC6828;
     margin-top:-1px;
-
     -webkit-transition: 0.3s ease;
 }
 div>div .underline{
@@ -54,6 +53,7 @@ a:link{
 li{
     color: #888 ;
     height:2vw;
+    font-weight: 300;
 }
 a:visited{
     color: #888 ;
@@ -80,15 +80,16 @@ main{
 
 }
 #menuSm{
-display:none;
-}
-header{
-    width:100%;
-    padding-left:10%;
-    padding-right:10%;
-    margin-top:1vw;
-    margin-bottom:1vw;
-}
+    display:none;
+    }
+    header{
+        width:100%;
+        padding-left:10%;
+        padding-right:10%;
+        margin-top:1vw;
+        margin-bottom:1vw;
+        height:5vw;
+    }
 
 header>div{
     width:40%;
@@ -98,14 +99,16 @@ header>div{
 header> div> ul{
 width:100%;
 padding:0px;
-
+position:absolute;
+right:9vw;
+top:2.05vw;
 } 
 
 
 header> div>ul>li {
     float:right;
     width:auto;
-    margin-right:3%;
+    margin-right:1%;
     list-style-type: none;
 } 
 header> div>ul>li:first-child {
@@ -116,7 +119,8 @@ header> div>ul>li:first-child {
   visibility: hidden;
     opacity:0;
     margin-left:20%;
-    margin-top:1vw;
+    margin-top:2.5vw;
+    right:14vw;
     width:20%;
     positioN:absolute;
     text-align: right;
@@ -125,7 +129,11 @@ header> div>ul>li:first-child {
 .fade{
     visibility: visible !important;
     opacity:1 !important;
-    margin-top:2vw !important;
+    margin-top:3vw !important;
+    right:8vw;
+      font-size:0.8vw;
+      z-index:10;
+      
 }
 #dropdown li{
     display:inline-block;
@@ -135,17 +143,21 @@ header> div>ul>li:first-child {
 #dropdown2 {
     visibility: hidden;
       opacity:0;
-      margin-left:10%;
-      margin-top:1vw;
+      right:18vw;
+      margin-top:2.5vw;
       width:20%;
       positioN:absolute;
       text-align: right;
       -webkit-transition: 0.3s ease;
+      
   }
   .fade2{
       visibility: visible !important;
       opacity:1 !important;
-      margin-top:2vw !important;
+      margin-top:3vw !important;
+      right:0vw;
+      font-size:0.8vw;
+      z-index:10;
   }
   #dropdown2 li{
       display:inline-block;
@@ -180,8 +192,21 @@ footer> div> article{
         height:5vw;
         border-bottom: 1px solid #bbb;
     }
+    .pfeil{
+        width:3%;
+        margin-left:5%;
+        float:left;
+    }
+    .projekt2 .pfeil{
+        width:3%;
+        margin-left:5%;
+        float:left;
+    }
 
     @media only screen and (max-width: 600px) {
+        header{
+            height:18vw;
+        }
         #menuN{
             display:none;
         }
@@ -208,23 +233,24 @@ footer> div> article{
             left:0% !important;
         }
         main{
-            min-height:100vh;
+            min-height:30vh;
         }
         #dropdownH {
             visibility: hidden;
               opacity:0;
               margin-left:-12%;
-              margin-top:2vw;
+             
               width:80%;
               positioN:absolute;
               text-align: right;
               -webkit-transition: 0.3s ease;
-              margin-top:20vw;
+              margin-top:42vw;
+              
           }
           .fadeH{
               visibility: visible !important;
               opacity:1 !important;
-              margin-left:-2% !important;
+              margin-right:10% !important;
           }
           #dropdownH li{
               display:inline-block;
@@ -238,26 +264,35 @@ footer> div> article{
                 opacity:0;
                 margin-left:-20%;
                 margin-top:2vw;
-                width:40%;
+                width:70%;
                 positioN:absolute;
                 text-align: left;
                 -webkit-transition: 0.3s ease;
-                margin-top:30vw;
+                margin-top:52.5vw;
                 margin-left:0%;
             }
             .fade2H{
                 visibility: visible !important;
                 opacity:1 !important;
-                margin-left:10% !important;
+                margin-right:30% !important;
             }
             #dropdown2H li{
                 display:inline-block;
-              margin-left:40%;
+              margin-left:15%;
              text-align: left;
              width:10%;
              float:right;
             
             }
+
+            header> div> ul{
+                width:100%;
+                padding:0px;
+                position:relative;
+                right:0vw;
+                top:0vw;
+                } 
+            
         footer> div> article{
             clear:left;
             margin-left: 10% !important;
