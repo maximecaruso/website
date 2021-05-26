@@ -46,9 +46,11 @@ function fade2(n){
         if(window.innerWidth<600){
       if(direction== "right"){
         lp1(-1);
+
       }
       if(direction== "left"){
         lp(1);
+        $("#arrwo1").css({"opacity":"0"});
       }
     }
       }
@@ -59,9 +61,11 @@ function fade2(n){
         if(window.innerWidth<600){
       if(direction== "right"){
         lpA1(-1);
+    
       }
       if(direction== "left"){
         lpA(1);
+        $("#arrwo2").css({"opacity":"0"});
       }
     }
       }
