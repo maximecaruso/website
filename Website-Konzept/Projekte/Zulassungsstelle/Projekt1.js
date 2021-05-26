@@ -136,23 +136,6 @@ function lp (n){
 
 
                     
-      $(document).ready(function(){
-        $(function(){
-              $('#dropHead').hover(function(ev){
-                 $('#dropdown').toggleClass('fade'); 
-                  ev.preventDefault();
-              });
-              $('#dropdown').hover(function(ev){
-                $('#dropdown').toggleClass('fade'); 
-                 ev.preventDefault();
-             });
-            });
-    
-    
-       
-          });
-
-
           $(document).ready(function(){
             $(function(){
                  
@@ -193,17 +176,11 @@ function lp (n){
         
         
           $(document).ready(function(){
-            $(function(){
-              $('main').click(function(ev){
-                 $('#dropdown2').removeClass('fade2'); 
-                 $('#dropdown').removeClass('fade'); 
-                  ev.preventDefault();
-              });
-            });
+           
              $(function(){
               $('#dropHead').click(function(ev){
                  $('#dropdown').addClass('fade'); 
-              
+                 $('#dropHead').addClass('active');
                  $('#dropdown2').removeClass('fade2'); 
                 
                   ev.preventDefault();
@@ -222,17 +199,11 @@ function lp (n){
           });
         
           $(document).ready(function(){
-            $(function(){
-              $('main').click(function(ev){
-                 $('#dropdown2H').removeClass('fade2H'); 
-                 $('#dropdownH').removeClass('fadeH'); 
-                  ev.preventDefault();
-              });
-            });
+           
              $(function(){
               $('#dropHeadH').click(function(ev){
                  $('#dropdownH').addClass('fadeH'); 
-                
+                 $('#dropHeadH').addClass('active');
                  $('#dropdown2H').removeClass('fade2H'); 
                 
                   ev.preventDefault();
@@ -251,11 +222,12 @@ function lp (n){
           });
              
           function burger(){
-  
+    
             if(burgerB == false){
               $('#burger').css({"display":"none"});
               $('#close').css({"display":"block"});
               $('#nav').animate({"height":"60vw"});
+              $('header').animate({"height":"65vw"});
               burgerB=true;
               return;
             }
@@ -263,7 +235,10 @@ function lp (n){
               $('#close').css({"display":"none"});
               $('#burger').css({"display":"block"});
               $('#nav').animate({"height":"0vw"});
+              $('header').animate({"height":"18vw"});
               burgerB=false;
               return;
             }
           }
+          
+ 
