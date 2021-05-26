@@ -16,6 +16,23 @@ $(document).ready(function(){
     setInterval(slider, 5000);
   });
 
+
+  
+$(document).ready(function(){
+  window.scrollTo(0, 0);
+ 
+  $("#inhaltHaupt").delay(1400).animate({"left":"0vw"},500);
+  $("#start").delay(1400).animate({"margin-left":"-100vw","z-index":"0"},500);
+
+  setTimeout(noneF, 1900);
+});
+function noneF(){
+  $("html").css({"overflow-y":"scroll"});
+ 
+  $("#start").css({"display":"none"});
+  
+}
+
  function slider(){
  
 
