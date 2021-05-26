@@ -244,7 +244,7 @@ footer> div> article{
               positioN:absolute;
               text-align: right;
               -webkit-transition: 0.3s ease;
-              margin-top:42vw;
+              margin-top:42.2vw;
               
           }
           .fadeH{
@@ -268,7 +268,7 @@ footer> div> article{
                 positioN:absolute;
                 text-align: left;
                 -webkit-transition: 0.3s ease;
-                margin-top:52.5vw;
+                margin-top:52.2vw;
                 margin-left:0%;
             }
             .fade2H{

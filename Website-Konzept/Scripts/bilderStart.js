@@ -5,7 +5,7 @@ var burgerB = false;
 
 $(document).ready(function(){
     for (let i = 0; i<bilderMax; i++){
-      $("#imageStart").append("<div  id='startbild"+i+"' style='position:absolute;left:15%;width:70%;top:0vw;display:none;'><img src='Images/Startseite/start"+(i+1)+".jpg' style='width:100%' ></div>");
+      $("#imageStart").append("<div  id='startbild"+i+"' style='position:absolute;left:10%;width:80%;top:0vw;display:none;'><img src='Images/Startseite/start"+(i+1)+".jpg' style='width:100%' ></div>");
       
     }
     
@@ -49,7 +49,7 @@ $(document).ready(function(){
               $('#dropHead').hover(function(ev){
                  $('#dropdown').toggleClass('fade'); 
                   ev.preventDefault();
-                  $('#dropHead').css('font-weight','400'); 
+                 
               });
               $('#dropdown').hover(function(ev){
                 $('#dropdown').toggleClass('fade'); 
