@@ -4,6 +4,7 @@ h1{
     color:#333;
     font-size: 2vw;
     margin-left:10%;
+    line-height: 2vw;;
 }
 h1, h2 {
 
@@ -74,7 +75,8 @@ h1, h2 {
       height:30vw;
       padding:5%;
       background-color: #ddd;
-      
+      opacity:0.3;
+      margin-left:30vw;
   }
   .projekt .bildholder{
     overflow:hidden;
@@ -98,7 +100,8 @@ margin-top:5vw;
     padding:5%;
     width:100%;
     height:30vw;
-    
+    opacity:0.3;
+    margin-left:-30vw;
 }
 .projekt2 .bildholder{
     overflow:hidden;
