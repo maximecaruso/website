@@ -30,7 +30,7 @@ function noneF(){
   $("html").css({"overflow-y":"scroll"});
  
   $("#start").css({"display":"none"});
-  
+  $("#inhaltHaupt").css({"position":"static"});
 }
 
  function slider(){

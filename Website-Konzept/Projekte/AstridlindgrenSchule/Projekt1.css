@@ -298,16 +298,18 @@ h2{
      
       }
       #rpfeil{
-          width: 12% !important;
-          margin-right:3% !important;
-          opacity:0.7 !important;
-          margin-top:45vw !important;
-         
-      }
-      #lpfeil{
+        display:none;
         width: 12% !important;
-        margin-left:3% !important;
+        margin-right:3% !important;
         opacity:0.7 !important;
         margin-top:45vw !important;
+       
     }
+    #lpfeil{
+      display:none;
+      width: 12% !important;
+      margin-left:3% !important;
+      opacity:0.7 !important;
+      margin-top:45vw !important;
+  }
   }

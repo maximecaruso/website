@@ -17,7 +17,23 @@ $(document).ready(function(){
     $("#zitat>p>span").css({"display":"inline-block", "transform":"translate(120%,120%)"});
   
   });
-
+  $(function() {
+    $("#gallerie").swipe( {
+       
+      swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
+    
+        if(window.innerWidth<600){
+      if(direction== "right"){
+        lp(-1);
+       
+      }
+      if(direction== "left"){
+        lp(1);
+        
+      }
+    }
+      }
+    });  });
 function lp (n){
     l += n;
     if(l<0){
