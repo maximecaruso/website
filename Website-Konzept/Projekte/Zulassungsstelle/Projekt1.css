@@ -274,14 +274,14 @@ h2{
         z-index: 15 !important;
         position:absolute !important;
         left:25% !important;
-        margin-top:38.5vw !important;
+        margin-top:-5.5vw !important;
     }
     #gal{
-        padding-top:0 !important;
+        padding:0 !important;
     }
     #gal img{
         width:100% !important;
-        margin-left:-10% !important;
+        margin-left:0% !important;
         margin-top: 0% !important;
     }
     .dot {
