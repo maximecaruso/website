@@ -11,7 +11,7 @@ body{
     line-height: 1.5vw;
     width:100%;
     margin:0px;
- 
+  
     overflow-x: hidden;
     font-size: 0.9vw;;
     font-weight: 200;
@@ -101,7 +101,7 @@ width:100%;
 padding:0px;
 position:absolute;
 right:9vw;
-top:2.05vw;
+top:2.35vw;
 } 
 
 
@@ -210,13 +210,22 @@ footer> div> article{
     position:absolute;
 }
 #start img{
-    width:20%;
-    margin-left:40%;
+    width:15%;
+    margin-left:42.5%;
     margin-top:15vw;
 }
 #inhaltHaupt{
     left:100vw;
     position:relative;
+}
+#auszeichnung{
+    width:30%;
+    margin-left:10%;
+    margin-bottom:3vw;
+}
+#auszeichnung img{
+    width:80%;
+    margin-top:45vw;
 }
     @media only screen and (max-width: 600px) {
         header{

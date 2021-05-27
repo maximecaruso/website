@@ -19,6 +19,8 @@ $(document).ready(function(){
 
   
 $(document).ready(function(){
+  $("body").css({"overflow-y":"hidden"});
+  $("html").css({"overflow-y":"hidden"});
   window.scrollTo(0, 0);
   $("#imgStart").attr("src","Images/logo.gif");
   $("#inhaltHaupt").delay(1400).animate({"left":"0vw"},500);
@@ -28,7 +30,7 @@ $(document).ready(function(){
 });
 function noneF(){
   $("html").css({"overflow-y":"scroll"});
- 
+  $("body").css({"overflow-y":"scroll"});
   $("#start").css({"display":"none"});
   $("#inhaltHaupt").css({"position":"static"});
 }
