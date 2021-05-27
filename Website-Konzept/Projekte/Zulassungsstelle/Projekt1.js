@@ -3,11 +3,20 @@ var bilderMax = 7;
 var h=0;
 var burgerB = false;
 $(document).ready(function(){
+  if(window.innerWidth<600){
     for (let i = 0; i<bilderMax; i++){
       $("#gal").append("<img src='img/start"+(i+1)+".jpg' id='startbild"+i+"' style='display:none;'>");
       $("#dotHolder").append("<span class='dot' onclick='slider("+i+")'></span>");
    
     }
+  }
+  else{
+    for (let i = 0; i<bilderMax; i++){
+      $("#gal").append("<img src='img/start"+(i+1)+".jpg' id='startbild"+i+"' style='position:absolute;display:none;'>");
+      $("#dotHolder").append("<span class='dot' onclick='slider("+i+")'></span>");
+   
+    }
+  }
     $("#startbild0").fadeIn(500);
     $("#startbild0").css("display","block");
     //slider(5);
@@ -48,6 +57,7 @@ function lp (n){
 }
 
  function slider(s){
+   if(window.innerWidth<600){
     for (let i = 0; i<bilderMax; i++){
         $("#dotHolder span:nth-child("+(i+1)+")").css("background-color","#bbb");
         $("#startbild"+i+"").css({"z-index":"0","position":"absolute"});
@@ -66,7 +76,25 @@ function lp (n){
         }
         
         
+   }
+   else{
+    for (let i = 0; i<bilderMax; i++){
+      $("#dotHolder span:nth-child("+(i+1)+")").css("background-color","#bbb");
+      $("#startbild"+i+"").css("z-index","0");
+      }
+  $("#startbild"+s+"").css("z-index","1").fadeIn(600);
+  $("#dotHolder span:nth-child("+(s+1)+")").css("background-color","#666");
+  for (let i = 0; i<bilderMax; i++){
+      
+      if(s != i){
      
+      $("#startbild"+i+"").delay(400).fadeOut(100);
+      }
+      
+          
+      
+      }
+   }
       }
 
       $(document).ready(function(){

@@ -181,7 +181,7 @@ h2{
 }
 #gallerie div{
     padding:10%;
-
+    height:10vw;
 }
 #lpfeil{
     display:inline-block;
@@ -278,6 +278,7 @@ h2{
     }
     #gal{
         padding:0 !important;
+        
     }
     #gal img{
         width:100% !important;
