@@ -89,7 +89,7 @@ main{
     position: relative;
    
     width:100%;
-    min-height:54vw;
+    min-height:125vw;
 }
 #imageStart{
     width:80%;
@@ -271,7 +271,8 @@ table img{
 }
 table{
     border-spacing: 2vw;
-    margin-top:55vw;
+    position:absolute;
+    margin-top:65vw;
     margin-left:  0%;;
     width:100%;
     padding:0 8%;
@@ -342,7 +343,7 @@ th:nth-child(3){
             left:0% !important;
         }
         main{
-            min-height:30vh;
+            min-height:125vw;
         }
         #dropdownH {
             visibility: hidden;
