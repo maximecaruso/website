@@ -25,8 +25,8 @@ $(document).ready(function(){
 });
 function intro(){
  
-  $("#start").css({"animation-delay":"2s"});
-  $("#inhaltHaupt").css({"animation-delay":"2s"});
+  $("#start").css({"animation-delay":"20s"});
+  $("#inhaltHaupt").css({"animation-delay":"20s"});
   window.scrollTo(0, 0);
  
  
