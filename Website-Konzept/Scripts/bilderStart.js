@@ -5,7 +5,7 @@ var burgerB = false;
 
 $(document).ready(function(){
     for (let i = 0; i<bilderMax; i++){
-      $("#imageStart").append("<div  id='startbild"+i+"' style='position:absolute;left:10%;width:80%;top:0vw;display:none;'><img src='Images/Startseite/start"+(i+1)+".jpg' style='width:100%' ></div>");
+      $("#imageStart").append("<div  id='startbild"+i+"' style='position:absolute;left:10%;width:80%;top:-54vw;display:none;'><img src='Images/Startseite/start"+(i+1)+".jpg' style='width:100%' ></div>");
       
     }
     
