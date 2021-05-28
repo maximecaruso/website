@@ -21,13 +21,19 @@ $(document).ready(function(){
 $(document).ready(function(){
   $("body").css({"overflow-y":"hidden"});
   $("html").css({"overflow-y":"hidden"});
+  $("#imgStart").attr({"src":"Images/logo.gif","onload":"intro()"});
+});
+function intro(){
+ 
+  $("#start").css({"animation-delay":"2s"});
+  $("#inhaltHaupt").css({"animation-delay":"2s"});
   window.scrollTo(0, 0);
-  $("#imgStart").attr("src","Images/logo.gif");
+ 
  
   $("#start").delay(1400).animate({"z-index":"0"},500);
 
   setTimeout(noneF, 2300);
-});
+}
 function noneF(){
   $("html").css({"overflow-y":"scroll"});
   
