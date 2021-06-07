@@ -2,7 +2,7 @@ var l = 0;
 var burgerB = false;
 var bilderMax = 3;
 var newBilder = -1;
-let namen = ["Ausstellungsgebäude Hogenmüller","Ausstellungsgebäude Hogenmüller","Ausstellungsgebäude Hogenmüller","Mehrfamiliewohnhaus Hofweier","Erweiterung Haus am Harmersbach","Wohnhaus Schnitzhofer","Wohnhaus Schnizhofer"];
+let namen = ["Ausstellungsgebäude Hogenmüller","Ausstellungsgebäude Hogenmüller","Ausstellungsgebäude Hogenmüller","Mehrfamiliewohnhaus Hofweier","Erweiterung Haus am Harmersbach","Wohnhaus Schnitzhofer","Wohnhaus Schnizhofer","Five1"];
 let text = [
   "BLALALALALSDASDKkaosdkkk koakdaosodokao kdoaksdokajdj jaksdk koakodk kaksodkoa",
   "BLALALALALSDASDKkaosdkkk koakdaosodokao kdoaksdokajdj jaksdk koakodk kaksodkoa",
@@ -12,6 +12,13 @@ let text = [
 ];
 
 $(document).ready(function(){
+  for (let i = 0; i<5; i++){
+    if((window.pageYOffset+(window.innerHeight/1.5))>$("#projekt"+i).offset().top && newBilder<i){
+      newBilder++;
+      $("#projekt"+i).animate({"opacity":"1","margin-left":"0vw"});
+      console.log(newBilder);
+     }                         
+   }
   $( document ).on( "mobileinit", function() {
     $.mobile.loader.prototype.options.disabled = true;
 });
@@ -135,7 +142,7 @@ function lp1 (n){
 
  $(document).scroll(function(){
   $(function(){                    
-    for (let i = 0; i<4; i++){
+    for (let i = 0; i<5; i++){
       if((window.pageYOffset+(window.innerHeight/1.5))>$("#projekt"+i).offset().top && newBilder<i){
         newBilder++;
         $("#projekt"+i).animate({"opacity":"1","margin-left":"0vw"});

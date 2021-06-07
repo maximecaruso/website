@@ -1,8 +1,11 @@
 var l = 1;
 var newBilder = -1;
-var bilderMax = 37;
+var bilderMax = 18;
 var burgerB = false;
-var title = ["AstridlindgrenSchule","Zulassungsstelle","Projekt 3","Projekt 4","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2"]
+var title = ["AstridlindgrenSchule","Zulassungsstelle","Wohnhaus B","Kita St.Wolfgang","Kita St.Josef","Wohnhaus S","Wohnhaus W",
+"Fachhochschule Hozminden","Gewerbliche Schule Lahr","Haus Georg Ehret","Rathaus Obrigheim",
+"Werkrealschule Obrigheim","Wohnhaus We","DRK Haslach","Friedenskirche Lahr","Wohnhaus D",
+"Wohnhaus Di","Betreutes Wohnen Hohberg","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2"]
 
 $(document).ready(function(){
     for (let i = 0; i<bilderMax; i++){
@@ -11,7 +14,7 @@ $(document).ready(function(){
     }
 
     $("main").animate({opacity:1});
-    for (let i = 0; i<9; i++){
+    for (let i = 0; i<6; i++){
     $("#projekt"+i).css({"margin-top":"2vw"});
     }
   });
@@ -24,8 +27,12 @@ $(document).ready(function(){
   
         
         for (let i = 0; i<bilderMax; i++){
+          
         if((window.pageYOffset+(window.innerHeight/1))>$("#projekt"+i).offset().top && newBilder<i){
+          console.log(i +"i");
+          console.log(newBilder);
           newBilder++;
+          
           $("#projekt"+i).animate({"margin-top":"2vw"})
         }
        
