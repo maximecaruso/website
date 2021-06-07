@@ -306,7 +306,7 @@ th:nth-child(3){
     animation-duration: 0.8s;
     
 
-    animation-iteration-count: infinite;
+  
 }
 @keyframes arrow {
     from   {margin-left:-10vw;}
