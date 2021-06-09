@@ -246,7 +246,7 @@ h2{
     #haupt{
         width:100%;
         margin-left:0%;
-        height:200vw;
+        height:340vw;
     }
     #haupt p{
         width:80% !important;
@@ -273,20 +273,30 @@ h2{
     #gallerie{
         margin-top:10vw;
         margin-bottom:10vw;
+        height:115vw;
+    }
+    #gallerie div{
+        padding:0;
+        padding-bottom:70vw;
     }
     #dotHolder{
         text-align: center !important;
         z-index: 15 !important;
         position:absolute !important;
-        left:25% !important;
+        left:35% !important;
         margin-top:38.5vw !important;
     }
     #gal{
         padding-top:0 !important;
     }
-    #gal img{
+    #gal img:first-child{
         width:100% !important;
-        margin-left:-10% !important;
+        margin-left:0% !important;
+        margin-top: 0% !important;
+    }
+    #gal img{
+        width:70% !important;
+        margin-left:15% !important;
         margin-top: 0% !important;
     }
     .dot {
