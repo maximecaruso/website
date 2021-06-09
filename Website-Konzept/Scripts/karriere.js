@@ -26,7 +26,7 @@ if(window.innerWidth>600){
      
           if((window.pageYOffset+(window.innerHeight/1.4))>$("#zitat").offset().top ){
 
-            $("#zitat").animate({"opacity":"1","margin-left":"35%"},1000);
+            $("#zitat").animate({"opacity":"1","margin-left":"33%"},1000);
           
       }
      

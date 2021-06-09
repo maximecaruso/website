@@ -54,8 +54,9 @@ h1{
     padding:2%;
     padding-bottom: 0;
     margin-bottom: 5vw;;
-    margin-top:5vw;
+    margin-top:15vw;
     opacity:0;
+  
 }
 #zitat p{
     font-size: 2vw;
@@ -100,6 +101,9 @@ h1{
     }
     #zitat{
         margin-left:10%;
-        width:80%;
+        width:76%;
+    }
+    p{
+    
     }
 }

@@ -44,10 +44,13 @@ a img {
     margin-bottom:-13vw;
 }
 main{
-    height:80vw;
+   min-height: 80vw !important;;
 }
 
 @media only screen and (max-width: 600px) {
+    main{
+        min-height: 145vw;
+    }
     	#sb{
             margin-top:10vw;
         }
