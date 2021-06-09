@@ -2,15 +2,22 @@ var l = 1;
 var newBilder = -1;
 var bilderMax = 18;
 var burgerB = false;
-var title = ["AstridlindgrenSchule","Zulassungsstelle","Wohnhaus B","Kita St.Wolfgang","Kita St.Josef","Wohnhaus S","Wohnhaus W",
+var title = ["AstridlindgrenSchule","Zulassungsstelle","Hauskapelle","Wohnhaus B","Kita St.Wolfgang","Kita St.Josef","Wohnhaus S","Wohnhaus W",
 "Fachhochschule Hozminden","Gewerbliche Schule Lahr","Haus Georg Ehret","Rathaus Obrigheim",
 "Werkrealschule Obrigheim","Wohnhaus We","DRK Haslach","Friedenskirche Lahr","Wohnhaus D",
 "Wohnhaus Di","Betreutes Wohnen Hohberg","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2"]
 
 $(document).ready(function(){
     for (let i = 0; i<bilderMax; i++){
+      if(i!=2){
         $("#projekte").append("<div id='projekt"+i+"' style='margin-top:20vw'></div>");
       $("#projekt"+i).append("<a href='../Projekte/"+title[i]+"/"+title[i]+".html'><div class='projektHolder'><img src='../Images/ProjektImage/"+title[i]+".jpg' class='projekte' style=''><p class='title'>"+title[i]+"</p><img src='../Images/keyboard_arrow_right_white_24dp.svg' class='arrow'></div></a>");
+      }
+      else{
+        $("#projekte").append("<div id='projekt"+i+"' style='margin-top:20vw'></div>");
+        $("#projekt"+i).append("<a href='../Projekte/"+title[i]+"/"+title[i]+".html'><div class='projektHolder'><img src='../Images/ProjektImage/"+title[i]+".jpg' class='projekte' style='margin-left:0%;'><p class='title'>"+title[i]+"</p><img src='../Images/keyboard_arrow_right_white_24dp.svg' class='arrow'></div></a>");
+       
+      }
     }
 
     $("main").animate({opacity:1});
