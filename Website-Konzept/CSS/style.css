@@ -283,6 +283,9 @@ table{
     width:100%;
     padding:0 8%;
     background-color:#ddd;
+    background-image: url(../Images/bannerStart.png);
+
+    background-size:100% 100%;
    
 }
 table th{
@@ -293,11 +296,12 @@ table th{
    
    font-size: 1.5vw;
    height:35vw;
-   box-shadow: 0 0 0vw #999;
-   transition: box-shadow 0.3s ease-in-out
+   box-shadow: 0 0 0.5vw #999;
+   transition: box-shadow 0.3s ease-in-out;
+
 }
 table th:hover{
-    box-shadow: 0 0 1vw #999;
+    box-shadow: 0 0 0.5vw #444;
 }
 table th div{
  
