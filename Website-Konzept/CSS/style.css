@@ -109,7 +109,7 @@ main{
         padding-left:10%;
         padding-right:10%;
         margin-top:1vw;
-        margin-bottom:1vw;
+        margin-bottom:0.2vw;
         height:5vw;
     }
 
@@ -123,8 +123,12 @@ width:100%;
 padding:0px;
 position:absolute;
 right:9vw;
-top:2.3vw;
+top:1.6vw;
 } 
+header> div> ul:first-child{
+    
+    top:2.3vw;
+    } 
 
 
 header> div>ul>li {
