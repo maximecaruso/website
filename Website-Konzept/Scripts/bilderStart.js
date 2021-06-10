@@ -4,6 +4,7 @@ var burgerB = false;
 
 
 $(document).ready(function(){
+ 
     for (let i = 0; i<bilderMax; i++){
       $("#imageStart").append("<div  id='startbild"+i+"' style='position:absolute;left:10%;width:80%;display:none;'><img src='Images/Startseite/start"+(i+1)+".jpg' style='width:100%' ></div>");
       
@@ -35,6 +36,7 @@ function intro(){
   setTimeout(noneF, 2300);
 }
 function noneF(){
+  $("#start").animate({"opacity":"0"});
   $("html").css({"overflow-y":"scroll"});
   
 }

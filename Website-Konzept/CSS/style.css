@@ -89,7 +89,7 @@ main{
     position: relative;
    
     width:100%;
-    min-height:125vw;
+    min-height:105vw;
 }
 #imageStart{
     width:80%;
@@ -195,6 +195,7 @@ footer{
 
     font-size: 0.8vw;;
     background-color: #555;
+    filter: drop-shadow(0px 0px 0.5vw #777);
 }
 footer a:visited{
     color: #bbb;
@@ -235,6 +236,7 @@ footer> div> article{
     animation-name: example;
     animation-duration: 0.8s;
     animation-fill-mode: both;
+    filter: drop-shadow(0px 0px 5vw #777);
 }
 #start img{
     width:15%;
@@ -272,11 +274,12 @@ table img{
 table{
     border-spacing: 2vw;
     position:absolute;
-    margin-top:65vw;
+    margin-top:55vw;
     margin-left:  0%;;
     width:100%;
     padding:0 8%;
     background-color:#ddd;
+   
 }
 table th{
     overflow: hidden;
@@ -286,7 +289,11 @@ table th{
    
    font-size: 1.5vw;
    height:35vw;
-   
+   box-shadow: 0 0 0vw #999;
+   transition: box-shadow 0.3s ease-in-out
+}
+table th:hover{
+    box-shadow: 0 0 1vw #999;
 }
 table th div{
  
@@ -308,6 +315,11 @@ th:nth-child(3){
 
   
 }
+@keyframes box {
+    from   {   box-shadow: 0 0 0vw #999;}
+    
+    to{box-shadow: 0 0 0.5vw #999;}
+  }
 @keyframes arrow {
     from   {margin-left:-10vw;}
     

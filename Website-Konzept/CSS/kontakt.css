@@ -18,7 +18,7 @@ h1{
     margin-bottom: 10vw;
 }
 #sb img{
-    margin-top:-19.5vw;
+    margin-top:0vw;
 }
 
 
@@ -36,6 +36,12 @@ a img {
     display: inline-block;
     margin-top:-39vw;
     margin-left:0%;
+    background-image: url(../Images/1x/Element\ 31.png);
+    background-repeat: no-repeat;
+    background-size: 48% 75%;
+    padding:2%;
+    background-position-x: 5%;
+    background-position-y: 2vw;
 }
 #karte{
     width:60%;
