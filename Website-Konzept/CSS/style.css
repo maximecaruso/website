@@ -290,18 +290,43 @@ table{
 }
 table th{
     overflow: hidden;
-    border-radius: 0.5vw;
+    border-radius: 0.1vw;
     width:20%;
    background-color:#eee;
    
-   font-size: 1.5vw;
+   font-size: 2vw;
+   text-transform: uppercase;
+   font-weight: 800;
    height:35vw;
-   box-shadow: 0 0 0.5vw #999;
+   box-shadow: 0 0 0.5vw #ddd;
    transition: box-shadow 0.3s ease-in-out;
-
+  
+}
+table th p{
+    background-color:#222;
+    color:#eee;
+    height:7%;
+    width:102%;
+    margin-top:2vw;
+    margin-left:-1%;
+    padding-top:0vw;
+    
+    transition: background-color 0.3s,color 0.3s,height 0.3s,padding-top 0.3s,margin-top 0.3s ease-in-out;
+}
+th:hover p{
+    height:100%;
+    width:102%;
+    margin-top:0vw;
+    margin-left:-1%;
+    padding-top:5vw;
+    background-color:#222;
+    color:#FC6828;
+   
 }
 table th:hover{
-    box-shadow: 0 0 0.5vw #444;
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+    box-shadow: 0 0 0.5vw #aaa;
 }
 table th div{
  
@@ -324,7 +349,7 @@ th:nth-child(3){
   
 }
 @keyframes box {
-    background-image: url(../Images/bannerStart.png);
+    
     from   {   box-shadow: 0 0 0vw #999;}
     
     to{box-shadow: 0 0 0.5vw #999;}
