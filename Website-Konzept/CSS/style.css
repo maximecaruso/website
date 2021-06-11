@@ -294,26 +294,28 @@ table th{
     width:20%;
    background-color:#eee;
    
-   font-size: 2vw;
+   font-size: 1.5vw;
    text-transform: uppercase;
-   font-weight: 800;
+   
    height:35vw;
    box-shadow: 0 0 0.5vw #ddd;
    transition: box-shadow 0.3s ease-in-out;
   
 }
 table th p{
-    background-color:#222;
-    color:#eee;
+    background-color:#eee;
+    color:#666;
     height:7%;
     width:102%;
+    font-weight: 200;
     margin-top:2vw;
     margin-left:-1%;
     padding-top:0vw;
-    
-    transition: background-color 0.3s,color 0.3s,height 0.3s,padding-top 0.3s,margin-top 0.3s ease-in-out;
+
+    transition:    font-weight 0.3s,background-color 0.3s,color 0.3s,height 0.3s,padding-top 0.3s,margin-top 0.3s ease-in-out;
 }
 th:hover p{
+    font-weight: 800;
     height:100%;
     width:102%;
     margin-top:0vw;
@@ -321,6 +323,11 @@ th:hover p{
     padding-top:5vw;
     background-color:#222;
     color:#FC6828;
+    text-decoration-line:  overline;
+  text-decoration-style: solid;
+  text-decoration-color: #ddd;
+  text-decoration-thickness:1px;
+    
    
 }
 table th:hover{
