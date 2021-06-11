@@ -283,7 +283,7 @@ table{
     width:100%;
     padding:0 8%;
     background-color:#ddd;
-    background-image: url(../Images/bannerStart.png);
+  
 
     background-size:100% 100%;
    
@@ -324,6 +324,7 @@ th:nth-child(3){
   
 }
 @keyframes box {
+    background-image: url(../Images/bannerStart.png);
     from   {   box-shadow: 0 0 0vw #999;}
     
     to{box-shadow: 0 0 0.5vw #999;}
