@@ -14,7 +14,7 @@ $(document).ready(function(){
     $("#startbild0").css("display","block");
     $("main").animate({opacity:1},1000);
   
-    setInterval(slider, 5000);
+    setTimeout(slider, 2000);
   });
 
 
@@ -31,16 +31,21 @@ function intro(){
   window.scrollTo(0, 0);
  
  
-  $("#start").delay(1400).animate({"z-index":"0"},500);
+  
 
-  setTimeout(noneF, 2300);
+  setTimeout(noneF, 2000);
 }
 function noneF(){
-  $("#start").animate({"opacity":"0"});
-  $("html").css({"overflow-y":"scroll"});
   
+  $("html").css({"overflow-y":"scroll"});
+  setTimeout(noneF2, 1000);
 }
-
+function noneF2(){
+  
+  $("#start").animate({"opacity":"0"},1000);
+  $("#imageStart").animate({"opacity":"1"},1000);
+  setInterval(slider, 5000);
+}
  function slider(){
  
 
