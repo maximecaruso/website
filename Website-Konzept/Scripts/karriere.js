@@ -57,8 +57,12 @@ else{
        
        
           });
-
-
+          $(document).ready(function(){
+          $('#zitat').hover(function(ev){
+            $('#zitat').css({"background-image":"url(../Images/briefo_1.gif)"});
+            ev.preventDefault();
+         });
+        });
 
 
           $(document).ready(function(){

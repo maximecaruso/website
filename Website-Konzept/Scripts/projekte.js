@@ -21,7 +21,7 @@ $(document).ready(function(){
     }
 
     $("main").animate({opacity:1});
-    for (let i = 0; i<6; i++){
+    for (let i = 0; i<3; i++){
     $("#projekt"+i).css({"margin-top":"2vw"});
     }
   });

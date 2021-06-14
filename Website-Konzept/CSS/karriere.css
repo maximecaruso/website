@@ -61,11 +61,21 @@ h1{
     background-repeat: no-repeat;
     height:0vw;
     overflow:hidden;
+    border-radius: 0.3vw;
+    -webkit-transition: 0.5s ease;
+}
 
+#zitat:hover p,#zitat:hover img{
+    opacity:0;
 }
 #zitat p{
     font-size: 2vw;
     text-align: center;
+    filter: drop-shadow(3px 3px 7px #111);
+}
+#zitat a{
+  
+    filter: drop-shadow(3px 3px 7px #111);
 }
 #zitat p:first-child{
     font-size: 2.8vw;
@@ -76,6 +86,7 @@ h1{
 #zitat img{
     width:50%;
     margin-left:25%;
+    filter: drop-shadow(3px 3px 7px #111);
 }
 
 @media only screen and (max-width: 600px) {
