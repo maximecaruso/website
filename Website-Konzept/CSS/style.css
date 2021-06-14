@@ -459,7 +459,10 @@ th:nth-child(3){
                 right:0vw;
                 top:0vw;
                 } 
-               
+                header> div> ul:first-child{
+                 
+                    top:0vw;
+                    } 
         footer> div> article{
             clear:left;
             margin-left: 10% !important;
