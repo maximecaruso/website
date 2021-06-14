@@ -5,43 +5,50 @@ $(document).ready(function(){
 
     $("main").animate({opacity:1});
     $("#suche>p").animate({"opacity":"1"},1000);
-    $("#suche>img").attr("src","https://prinzessin223.github.io/website/Website-Konzept/Images/werbungJb3_2.gif");
+    $("#suche>img").attr("src","../Images/werbungJb3_2.gif");
+   // setTimeout(bild1, 1000);
   });
 
 
 
 let an = false;
-
+let an2 = false;
   
-
+function bild1(){
+  $("#suche>img").attr("src","https://prinzessin223.github.io/website/Website-Konzept/Images/1x/wollen.png");
+              
+}
       $(document).scroll(function(){
         $(function(){
 if(window.innerWidth>600){
             if((window.pageYOffset+(window.innerHeight/1.6))>$("#bilden").offset().top && an == false ){
                
-                $("#bilden>img").attr("src","https://prinzessin223.github.io/website/Website-Konzept/Images/werbungJb3.gif");
+                $("#bilden>img").attr("src","../Images/werbungJb3.gif");
                 $("#bilden>p").animate({"opacity":"1"},1000);
                 an =true;
+            
           }
      
-          if((window.pageYOffset+(window.innerHeight/1.4))>$("#zitat").offset().top ){
+          if((window.pageYOffset+(window.innerHeight/1.4))>$("#zitat").offset().top && an2==false ){
 
             $("#zitat").animate({"opacity":"1","margin-left":"33%"},1000);
-          
+      
+            an2 = true;
       }
      
 }
 else{
   if((window.pageYOffset+(window.innerHeight/1.6))>$("#bildenHa").offset().top && an == false ){
                
-    $("#bildenHa>img").attr("src","https://prinzessin223.github.io/website/Website-Konzept/Images/werbungJb3.gif")
+    $("#bildenHa>img").attr("src","../Images/werbungJb3.gif")
     $("#bildenHa>p").animate({"opacity":"1"},1000);
     an =true;
 }
-  if((window.pageYOffset+(window.innerHeight/1.4))>$("#zitat").offset().top ){
+  if((window.pageYOffset+(window.innerHeight/1.4))>$("#zitat").offset().top && an2==false ){
 
     $("#zitat").animate({"opacity":"1","margin-left":"10%"},1000);
-  
+   
+    an2 = true;
 }
 }
             });

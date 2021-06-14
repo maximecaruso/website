@@ -176,8 +176,15 @@ h2{
     background-color: #eee;
     min-height:65vw;
 }
-#gallerie img{
-    width: 80%;
+#gallerie #gal img{
+    width: 50%;
+    margin-left:15%;
+    margin-top:5vw;
+}
+#gallerie #gal img:nth-child(5){
+    width: 25%;
+    margin-left:27.5%;
+    margin-top:5vw;
 }
 #gallerie div{
     padding:10%;
