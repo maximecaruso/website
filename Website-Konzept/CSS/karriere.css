@@ -49,7 +49,7 @@ h1{
 }
 #zitat{
     width:30%;
-    margin-left:0%;
+    margin-left:33%;
     background-color:#222;
     padding:2%;
     padding-bottom: 0;
@@ -57,7 +57,10 @@ h1{
     margin-top:15vw;
     opacity:0;
     background-image: url(../Images/test.png);
-    background-size: auto 100%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height:0vw;
+    overflow:hidden;
 
 }
 #zitat p{
@@ -104,6 +107,9 @@ h1{
     #zitat{
         margin-left:10%;
         width:76%;
+    }
+    #zitat p{
+        font-size: 5vw !important;
     }
     p{
     

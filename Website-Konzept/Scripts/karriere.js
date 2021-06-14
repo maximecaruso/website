@@ -31,7 +31,7 @@ if(window.innerWidth>600){
      
           if((window.pageYOffset+(window.innerHeight/1.4))>$("#zitat").offset().top && an2==false ){
 
-            $("#zitat").animate({"opacity":"1","margin-left":"33%"},1000);
+            $("#zitat").animate({"opacity":"1","height":"25vw"},600);
       
             an2 = true;
       }
@@ -46,7 +46,7 @@ else{
 }
   if((window.pageYOffset+(window.innerHeight/1.4))>$("#zitat").offset().top && an2==false ){
 
-    $("#zitat").animate({"opacity":"1","margin-left":"10%"},1000);
+    $("#zitat").animate({"opacity":"1","margin-left":"10%","height":"60vw"},1000);
    
     an2 = true;
 }
