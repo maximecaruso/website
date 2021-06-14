@@ -42,7 +42,7 @@ function noneF(){
 }
 function noneF2(){
   
-  $("#start").animate({"opacity":"0"},1000);
+  $("#start").animate({"opacity":"0","z-index":"0"},1000);
   $("#imageStart").animate({"opacity":"1"},1000);
   setInterval(slider, 5000);
 }
