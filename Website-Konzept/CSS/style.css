@@ -411,7 +411,7 @@ th:nth-child(3){
               positioN:absolute;
               text-align: right;
               -webkit-transition: 0.3s ease;
-              margin-top:42.2vw;
+              margin-top:42.5vw;
               
           }
           .fadeH{
@@ -435,7 +435,7 @@ th:nth-child(3){
                 positioN:absolute;
                 text-align: left;
                 -webkit-transition: 0.3s ease;
-                margin-top:52.2vw;
+                margin-top:52.5vw;
                 margin-left:0%;
             }
             .fade2H{
@@ -459,7 +459,7 @@ th:nth-child(3){
                 right:0vw;
                 top:0vw;
                 } 
-            
+               
         footer> div> article{
             clear:left;
             margin-left: 10% !important;
