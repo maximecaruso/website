@@ -1,4 +1,4 @@
-
+var intervalRewind;
 d = new Date();
 var burgerB = false;
 $(document).ready(function(){
@@ -57,12 +57,55 @@ else{
        
        
           });
+          var vid;
+          var vid2;
           $(document).ready(function(){
+             vid =  document.getElementById("video");
+             vid2 =  document.getElementById("video2");
+            vid.pause();
+            vid2.pause();
+            $('#video').css({"display":"block"});
+            $('#video2').css({"display":"none"});
           $('#zitat').hover(function(ev){
-            $('#zitat').css({"background-image":"url(../Images/briefo_1.gif)"});
+            vid2.currentTime = 0;
+            vid.currentTime=0;
+            vid.play();
+            console.log(vid.currentTime);
+              console.log(vid2.currentTime);
+            
+           
+            $('#video').css({"display":"block"});
+            $('#video2').css({"display":"none"});
+            $('#zitat p,#zitat img').animate({"opacity":"0"});
+            
+            
             ev.preventDefault();
+        
+           
+          
+         
+         });
+            $('#zitat').mouseleave(function(ev){
+             
+              vid.currentTime=768;
+              vid2.currentTime = 0;
+              
+          
+              $('#video2').css({"display":"block"});
+              $('#video').css({"display":"none"});
+              vid2.play();
+              $('#zitat p,#zitat img').delay(600).animate({"opacity":"1"},1000);
+              
+          
+            ev.preventDefault();
+            
          });
         });
+
+        function in1(){
+          
+          
+        }
 
 
           $(document).ready(function(){

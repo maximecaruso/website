@@ -62,12 +62,14 @@ h1{
     height:0vw;
     overflow:hidden;
     border-radius: 0.3vw;
-    -webkit-transition: 0.5s ease;
+    
+}
+#video, #video2{
+    width:120%;
+    margin-top:-27vw;
+    margin-left: -10%;
 }
 
-#zitat:hover p,#zitat:hover img{
-    opacity:0;
-}
 #zitat p{
     font-size: 2vw;
     text-align: center;
