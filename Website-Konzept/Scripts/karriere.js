@@ -67,8 +67,8 @@ else{
             $('#video').css({"display":"block"});
             $('#video2').css({"display":"none"});
           $('#zitat').hover(function(ev){
-            vid2.currentTime = 0;
-            vid.currentTime=0;
+            vid2.currentTime = 0.1;
+            vid.currentTime=0.1;
             vid.play();
             console.log(vid.currentTime);
               console.log(vid2.currentTime);
@@ -87,8 +87,8 @@ else{
          });
             $('#zitat').mouseleave(function(ev){
              
-              vid.currentTime=768;
-              vid2.currentTime = 0;
+              vid.currentTime=0.768;
+              vid2.currentTime = 0.1;
               
           
               $('#video2').css({"display":"block"});
