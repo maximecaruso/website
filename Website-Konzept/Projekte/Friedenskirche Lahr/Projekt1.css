@@ -138,7 +138,7 @@ h2{
     display:inline-block;
     margin-left:20%;
     width:48%;
-    height:16vw;;
+   
     overflow: hidden;
 }
 #vorher div div img{
@@ -176,8 +176,25 @@ h2{
     background-color: #eee;
     min-height:65vw;
 }
-#gallerie img{
-    width: 80%;
+#gallerie #gal img{
+    width: 45%;
+    margin-left:17.5%;
+    margin-top:6vw;
+}
+#gallerie #gal img:nth-child(3){
+    width: 25%;
+    margin-left:27.5%;
+    margin-top:4vw;
+}
+#gallerie #gal img:nth-child(2){
+    width: 25%;
+    margin-left:27.5%;
+    margin-top:4vw;
+}
+#gallerie #gal img:nth-child(5){
+    width: 25%;
+    margin-left:27.5%;
+    margin-top:4vw;
 }
 #gallerie div{
     padding:10%;

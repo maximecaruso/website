@@ -57,14 +57,14 @@ h2{
 }
 #einstieg div p{
     margin-left:4%;
-    width:45%;
+    width:35%;
     margin-bottom:15%;
     display: inline-block;
     text-align: justify;
     
 }
 #einstieg div img:nth-child(2){
-    width:45%;
+    width:35%;
    margin-left:4%;
     display: inline-block;
     margin-bottom: 0%;
@@ -96,7 +96,7 @@ h2{
 #haupt img{
     margin-toP:10%;
     margin-left:-10%;
-    width:45%;
+    width:35%;
     display: inline-block;
     margin-bottom: -15%;
 }
@@ -108,7 +108,7 @@ h2{
 #haupt img:nth-child(2){
     margin-toP:10%;
     margin-left:4%;
-    width:45%;
+    width:35%;
     display: inline-block;
     margin-bottom: -15%;
     
@@ -148,7 +148,7 @@ h2{
     width:100%;
 }
 #vorher> div> img{
-    width:97.5%;
+    width:80%;
     margin-left:1%;
     margin-top:1%;
 }
@@ -177,9 +177,9 @@ h2{
     min-height:65vw;
 }
 #gallerie #gal img{
-    width: 60%;
-    margin-left:10%;
-    margin-top:2vw;
+    width: 40%;
+    margin-left:20%;
+    margin-top:8vw;
 }
 #gallerie #gal img:nth-child(4){
     width: 25%;

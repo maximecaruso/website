@@ -57,14 +57,14 @@ h2{
 }
 #einstieg div p{
     margin-left:4%;
-    width:45%;
+    width:35%;
     margin-bottom:15%;
     display: inline-block;
     text-align: justify;
     
 }
 #einstieg div img:nth-child(2){
-    width:45%;
+    width:35%;
    margin-left:4%;
     display: inline-block;
     margin-bottom: 0%;
@@ -96,9 +96,9 @@ h2{
 #haupt img{
     margin-toP:10%;
     margin-left:-10%;
-    width:45%;
+    width:35%;
     display: inline-block;
-    margin-bottom: -15%;
+    margin-bottom: -7%;
 }
 #haupt p{
     width:30%;
@@ -108,7 +108,7 @@ h2{
 #haupt img:nth-child(2){
     margin-toP:10%;
     margin-left:4%;
-    width:45%;
+    width:35%;
     display: inline-block;
     margin-bottom: -15%;
     

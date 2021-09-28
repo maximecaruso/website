@@ -174,10 +174,12 @@ h2{
 }
 #gallerie{
     background-color: #eee;
-    min-height:65vw;
+    min-height:80vw;
 }
-#gallerie img{
-    width: 80%;
+#gallerie #gal img{
+    width: 60%;
+    margin-left:10%;
+    margin-top:6vw;
 }
 #gallerie div{
     padding:10%;
@@ -214,7 +216,6 @@ h2{
   .active, .dot:hover {
     background-color: #666;
   }
-
   @media only screen and (max-width: 600px) {
       h1{
           font-size: 4vw;

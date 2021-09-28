@@ -64,7 +64,7 @@ h2{
     
 }
 #einstieg div img:nth-child(2){
-    width:45%;
+    width:35%;
    margin-left:4%;
     display: inline-block;
     margin-bottom: 0%;
@@ -96,7 +96,7 @@ h2{
 #haupt img{
     margin-toP:10%;
     margin-left:-10%;
-    width:45%;
+    width:35%;
     display: inline-block;
     margin-bottom: -15%;
 }
@@ -108,7 +108,7 @@ h2{
 #haupt img:nth-child(2){
     margin-toP:10%;
     margin-left:4%;
-    width:45%;
+    width:35%;
     display: inline-block;
     margin-bottom: -15%;
     
@@ -148,7 +148,7 @@ h2{
     width:100%;
 }
 #vorher> div> img{
-    width:97.5%;
+    width:80%;
     margin-left:1%;
     margin-top:1%;
 }

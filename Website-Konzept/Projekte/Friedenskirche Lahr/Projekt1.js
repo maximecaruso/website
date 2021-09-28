@@ -3,6 +3,7 @@ var bilderMax = 6;
 var h=0;
 var burgerB = false;
 $(document).ready(function(){
+  $("#vorher div div img").css({"visibility":"hidden"});
     for (let i = 0; i<bilderMax; i++){
       $("#gal").append("<img src='img/start"+(i+1)+".jpg' id='startbild"+i+"' style='position:absolute;display:none;'>");
       $("#dotHolder").append("<span class='dot' onclick='slider("+i+")'></span>");
@@ -79,7 +80,7 @@ function lp (n){
         
 
                 if((window.pageYOffset+(window.innerHeight/1.1))>$("#Titel>h1").offset().top && h<1 ){
-                  $("#Titel>h1,h2").animate({"margin-left":"12%"},600,"swing");
+                  $("#Titel>h1,h2").animate({"margin-left":"10%"},600,"swing");
                  $("#balken").animate({"width":"80%"},600,"swing");
                  h++;
                  console.log(h);
@@ -243,5 +244,40 @@ function lp (n){
                 }
               }
               
-     
+         /*     $(document).ready(function(){
+              $("img").click(function(e) {
+                console.log("sd2");
+                e.preventDefault();
+                
+                var position = $("#gal").offset().top+200;
+              
+                $("body, html").animate({
+                  scrollTop: position
+                },1000);
+               
+              }); });*/
+              let gallerie=false;
+              $(document).ready(function(){
+                
+                $("img").click(function(e) {
+                  if(gallerie==false){
+                  gallerie=true;
+                  console.log("sdsd3");
+                  $("#gallerie").css({"position":"fixed","top":"-10vw","width":"100%","height":"100vw"});
+                  $("#gallerie").append(" <svg xmlns='http://www.w3.org/2000/svg'  onclick='closeGallerie()' id='closeGal'  style='display:block;position:absolute;right:3%;top:9vw;' height='7vw' viewBox='0 0 24 24' width='2%' fill='#000000'><path d='M0 0h24v24H0V0z' fill='none'/><path d='M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z'/></svg>");
+                  return;
+                } });
+                    
+               });
+
+               function closeGallerie(){
+                $(document).ready(function(){
     
+                    console.log(gallerie);
+                  if(gallerie==true){
+                      gallerie=false;
+                      $("#gallerie").css({"position":"unset","top":"0vw","width":"100%","height":"0vw"});
+                      return;         
+                  }     
+                 });
+               }

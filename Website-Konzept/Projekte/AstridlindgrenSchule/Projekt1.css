@@ -52,7 +52,7 @@ h2{
 #einstieg div img{
     width:50%;
     display: inline-block;
-    margin-bottom: -15%;
+    margin-bottom: -7%;
 
 }
 #einstieg div p{
@@ -60,7 +60,7 @@ h2{
     width:45%;
     margin-bottom:15%;
     display: inline-block;
-    text-align: justify;
+    
     
 }
 #einstieg div img:nth-child(2){
@@ -73,9 +73,9 @@ h2{
 #einstieg div p:nth-child(1){
     margin-top:-10%;
     margin-left:4%;
-    width:25%;
+    width:45%;
     display: inline-block;
-    text-align: justify;
+ 
     
 }
 
@@ -98,7 +98,7 @@ h2{
     margin-left:-10%;
     width:45%;
     display: inline-block;
-    margin-bottom: -15%;
+    margin-bottom: 25%;
 }
 #haupt p{
     width:30%;
@@ -110,7 +110,7 @@ h2{
     margin-left:4%;
     width:45%;
     display: inline-block;
-    margin-bottom: -15%;
+    margin-bottom: 4%;
     
 }
 #haupt p:nth-child(1){
@@ -216,6 +216,10 @@ h2{
   .active, .dot:hover {
     background-color: #666;
   }
+  main p{
+   
+    
+   }
 
   @media only screen and (max-width: 600px) {
       h1{
@@ -243,7 +247,7 @@ h2{
     #haupt{
         width:100%;
         margin-left:0%;
-        height:200vw;
+        height:302vw;
     }
     #haupt p{
         width:80% !important;
@@ -314,4 +318,5 @@ h2{
         opacity:0.7 !important;
         margin-top:45vw !important;
     }
+  
   }

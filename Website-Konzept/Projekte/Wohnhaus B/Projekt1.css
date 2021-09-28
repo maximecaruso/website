@@ -64,7 +64,7 @@ h2{
     
 }
 #einstieg div img:nth-child(2){
-    width:45%;
+    width:35%;
    margin-left:4%;
     display: inline-block;
     margin-bottom: 0%;
@@ -96,7 +96,7 @@ h2{
 #haupt img{
     margin-toP:10%;
     margin-left:-10%;
-    width:45%;
+    width:35%;
     display: inline-block;
     margin-bottom: -15%;
 }
@@ -108,7 +108,7 @@ h2{
 #haupt img:nth-child(2){
     margin-toP:10%;
     margin-left:4%;
-    width:45%;
+    width:35%;
     display: inline-block;
     margin-bottom: -15%;
     
@@ -148,7 +148,7 @@ h2{
     width:100%;
 }
 #vorher> div> img{
-    width:97.5%;
+    width:80%;
     margin-left:1%;
     margin-top:1%;
 }
@@ -174,10 +174,22 @@ h2{
 }
 #gallerie{
     background-color: #eee;
-    min-height:65vw;
+    min-height:80vw;
 }
-#gallerie img{
-    width: 80%;
+#gallerie #gal img{
+    width: 40%;
+    margin-left:20%;
+    margin-top:8vw;
+}
+#gallerie #gal img:nth-child(5){
+    width: 25%;
+    margin-left:27.5%;
+    margin-top:6vw;
+}
+#gallerie #gal img:nth-child(6){
+    width: 25%;
+    margin-left:27.5%;
+    margin-top:6vw;
 }
 #gallerie div{
     padding:10%;
@@ -214,7 +226,6 @@ h2{
   .active, .dot:hover {
     background-color: #666;
   }
-
   @media only screen and (max-width: 600px) {
       h1{
           font-size: 4vw;

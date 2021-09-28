@@ -174,10 +174,12 @@ h2{
 }
 #gallerie{
     background-color: #eee;
-    min-height:65vw;
+    min-height:80vw;
 }
-#gallerie img{
-    width: 80%;
+#gallerie #gal img{
+    width: 40%;
+    margin-left:20%;
+    margin-top:8vw;
 }
 #gallerie div{
     padding:10%;
