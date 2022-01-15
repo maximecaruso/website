@@ -1,0 +1,91 @@
+#projekte{
+  margin-left: 5%;
+  width:85%;
+	
+}
+#projekte> div{
+    display:inline-block;
+    margin-left:5%;
+    width:28.3%;
+    
+
+    overflow: hidden;
+
+    filter: grayscale(0);
+  
+    
+}
+#projekte> div img{
+    height:35vw;
+}
+
+#projekte> div:hover{
+   
+  cursor: pointer;
+}
+#projekte> div .projekte {
+    filter: grayscale(0);
+    -webkit-transition: 1s ease;
+	transition: 1s ease;
+    }
+#projekte> div:hover .projekte {
+    filter: grayscale(100);
+}
+.arrow{
+    width:30%;
+    
+    margin-top:-38vw;
+    margin-left:20%;
+    opacity: 0;
+    filter: drop-shadow(0px 0px 5px darkgrey);
+   -webkit-transition:  0.4s ease-in-out;
+	transition:  0.4s ease-in-out;
+}
+#projekte> div:hover .arrow{
+    opacity: 1;
+    margin-left:35%;
+    }
+#projekte> div> div{
+    overflow: hidden;
+}
+.title{     
+    color:#666;
+
+    margin-top:0vw;
+    margin-left:4%;
+}
+
+
+
+
+.projekte{
+
+    width:auto;
+    margin-left:-60%;
+    margin-top: 0%;
+}
+
+@media only screen and (max-width: 600px) {
+    #projekte{
+        width:80%;
+      }
+      #projekte> div{
+          width:100%;
+         
+ }
+ #projekte> div img{
+    height:118vw;
+}
+
+ #projekte{
+     margin-top:5vw;
+     
+ }
+ .title{
+     margin-top:1vw;
+     font-size: 4vw;
+ }
+ .arrow{
+    display: none;
+}
+}
