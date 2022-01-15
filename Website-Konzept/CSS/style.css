@@ -137,6 +137,10 @@ header> div>ul>li {
     margin-right:2%;
     list-style-type: none;
 } 
+header> div>ul>li:hover {
+    cursor: pointer;
+} 
+
 header> div>ul>li:first-child {
     margin-right:1%;
 } 
@@ -145,19 +149,18 @@ header> div>ul>li:first-child {
   visibility: hidden;
     opacity:0;
     margin-left:20%;
-    margin-top:1.5vw;
-    right:14vw;
+    margin-top:2vw;
+    right:16vw;
     width:20%;
     positioN:absolute;
     text-align: right;
     -webkit-transition: 0.3s ease;
+	
 }
 .fade{
     visibility: visible !important;
     opacity:1 !important;
-    margin-top:2vw !important;
-    right:8vw;
-      font-size:0.8vw;
+    right:14vw !important;
       z-index:10;
       
 }
@@ -169,8 +172,8 @@ header> div>ul>li:first-child {
 #dropdown2 {
     visibility: hidden;
       opacity:0;
-      right:15vw;
-      margin-top:1.5vw;
+      right:17vw;
+      margin-top:2vw;
       width:20%;
       positioN:absolute;
       text-align: right;
@@ -180,9 +183,7 @@ header> div>ul>li:first-child {
   .fade2{
       visibility: visible !important;
       opacity:1 !important;
-      margin-top:2vw !important;
-      right:0vw;
-      font-size:0.8vw;
+    right:15vw !important;
       z-index:10;
   }
   #dropdown2 li{
@@ -316,12 +317,7 @@ table th p{
     transition:    font-weight 0.3s,background-color 0.3s,color 0.3s,height 0.3s,padding-top 0.3s,margin-top 0.3s ease-in-out;
 }
 th:hover p{
-    font-weight: 200;
-    height:100%;
-    width:102%;
-    margin-top:0vw;
-    margin-left:-1%;
-    padding-top:5vw;
+    padding-top:4vw;
     background-color:#222;
     color:#FC6828;
     text-decoration-line:  overline;
@@ -339,14 +335,17 @@ table th:hover{
 table th div{
  
 }
-th:nth-child(1){
-    background-color:#eee;
+th:nth-child(1),th:nth-child(2),th:nth-child(3){
+	 transition:    background-color 0.3s;
 }
-th:nth-child(2){
-    background-color:#eee;
+th:nth-child(1):hover{
+    background-color:#222;
 }
-th:nth-child(3){
-    background-color:#eee;
+th:nth-child(2):hover{
+    background-color:#222;
+}
+th:nth-child(3):hover{
+    background-color:#222;
 }
 #arrow{
     

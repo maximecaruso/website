@@ -1,20 +1,28 @@
 var l = 1;
 var newBilder = -1;
-var bilderMax = 18;
+var bilderMax = 24;
 var burgerB = false;
 var title = ["AstridlindgrenSchule","Zulassungsstelle","Hauskapelle","Wohnhaus B","Kita St.Wolfgang","Kita St.Josef","Wohnhaus S","Wohnhaus W",
 "Fachhochschule Hozminden","Gewerbliche Schule Lahr","Haus Georg Ehret","Rathaus Obrigheim",
-"Werkrealschule Obrigheim","Wohnhaus We","DRK Haslach","Friedenskirche Lahr","Wohnhaus D",
-"Wohnhaus Di","Betreutes Wohnen Hohberg","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2"]
+"Werkrealschule Obrigheim","Wohnhaus Wö","DRK Haslach","Friedenskirche Lahr","Wohnhaus D",
+"Wohnhaus Di","Betreutes Wohnen Hohberg","Gemeinschaftssaal","Martinskindergarten","Rathaus Obrigheim","Wohnhaus H","Treppenhaus","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2","Projekt 2"]
 
 $(document).ready(function(){
     for (let i = 0; i<bilderMax; i++){
-      if(i!=2){
-        $("#projekte").append("<div id='projekt"+i+"' style='margin-top:20vw'></div>");
+      if(i!=2&&i!=13&&i!=19){
+        $("#projekte").append("<div id='projekt"+i+"' style='padding-top:20vw;-webkit-transition:padding-top 0.4s ease-in-out;'></div>");
       $("#projekt"+i).append("<a href='../Projekte/"+title[i]+"/"+title[i]+".html'><div class='projektHolder'><img src='../Images/ProjektImage/"+title[i]+".jpg' class='projekte' style=''><p class='title'>"+title[i]+"</p><img src='../Images/keyboard_arrow_right_white_24dp.svg' class='arrow'></div></a>");
       }
+		else if(i==13){
+        $("#projekte").append("<div id='projekt"+i+"' style='padding-top:20vw;-webkit-transition:padding-top 0.4s ease-in-out;'></div>");
+      $("#projekt"+i).append("<a href='../Projekte/"+title[i]+"/"+title[i]+".html'><div class='projektHolder'><img src='../Images/ProjektImage/"+title[i]+".jpg' class='projekte' style='margin-left:0vw;'><p class='title'>"+title[i]+"</p><img src='../Images/keyboard_arrow_right_white_24dp.svg' class='arrow'></div></a>");
+      }
+		else if(i==19){
+        $("#projekte").append("<div id='projekt"+i+"' style='padding-top:20vw;-webkit-transition:padding-top 0.4s ease-in-out;'></div>");
+      $("#projekt"+i).append("<a href='../Projekte/"+title[i]+"/"+title[i]+".html'><div class='projektHolder'><img src='../Images/ProjektImage/"+title[i]+".jpg' class='projekte' style='margin-left:0vw;'><p class='title'>"+title[i]+"</p><img src='../Images/keyboard_arrow_right_white_24dp.svg' class='arrow'></div></a>");
+      }
       else{
-        $("#projekte").append("<div id='projekt"+i+"' style='margin-top:20vw'></div>");
+        $("#projekte").append("<div id='projekt"+i+"' style='padding-top:20vw;-webkit-transition:padding-top 0.4s ease-in-out;'</div>");
         $("#projekt"+i).append("<a href='../Projekte/"+title[i]+"/"+title[i]+".html'><div class='projektHolder'><img src='../Images/ProjektImage/"+title[i]+".jpg' class='projekte' style='margin-left:0%;'><p class='title'>"+title[i]+"</p><img src='../Images/keyboard_arrow_right_white_24dp.svg' class='arrow'></div></a>");
        
       }
@@ -22,13 +30,14 @@ $(document).ready(function(){
 
     $("main").animate({opacity:1});
     for (let i = 0; i<3; i++){
-    $("#projekt"+i).css({"margin-top":"2vw"});
+    $("#projekt"+i).css({"padding-top":"2vw"});
     }
   });
 
 
 
   $(document).scroll(function(){
+	  
     $(function(){
 
   
@@ -40,7 +49,7 @@ $(document).ready(function(){
           console.log(newBilder);
           newBilder++;
           
-          $("#projekt"+i).animate({"margin-top":"2vw"})
+          $("#projekt"+i).css({"padding-top":"2vw"})
         }
        
       }

@@ -277,6 +277,7 @@ function lp (n){
                     console.log(gallerie);
                   if(gallerie==true){
                       gallerie=false;
+					  $("#closeGal").remove();
                       $("#gallerie").css({"position":"unset","top":"0vw","width":"100%","height":"0vw"});
                       return;         
                   }     
