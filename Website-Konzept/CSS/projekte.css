@@ -1,6 +1,7 @@
 #projekte{
   margin-left: 5%;
   width:85%;
+	
 }
 #projekte> div{
     display:inline-block;
@@ -25,18 +26,20 @@
 #projekte> div .projekte {
     filter: grayscale(0);
     -webkit-transition: 1s ease;
+	transition: 1s ease;
     }
 #projekte> div:hover .projekte {
     filter: grayscale(100);
 }
 .arrow{
     width:30%;
-    position: absolute;
+    
     margin-top:-38vw;
     margin-left:20%;
     opacity: 0;
     filter: drop-shadow(0px 0px 5px darkgrey);
-    -webkit-transition: 0.5s ease-in-out;
+   -webkit-transition:  0.4s ease-in-out;
+	transition:  0.4s ease-in-out;
 }
 #projekte> div:hover .arrow{
     opacity: 1;
